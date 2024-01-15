@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Band</title>
+    <link rel="stylesheet" href="./css/Group.css" />
+    <link rel="stylesheet" href="./css/Group 2.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">More
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Album</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="sign_in">
+                <a id="login" href="#">Sign Up/ Sign In</a>
+            </div>
+
+            <!-- search -->
+            <!-- <div class="search-btn">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div> -->
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+
+            <!-- .nav -->
+        </div>
+
+        <div id="slider">
+            <img class="slides" src="https://i.pinimg.com/564x/d6/09/f1/d609f12433708441b01e8b148212e785.jpg" alt="">
+            <img class="slides" src="https://www.brooklynvegan.com/wp-content/uploads/2022/07/21/attachment-1975-part-band.jpeg" alt="">
+            <script>
+                w3.slideshow(".slides", 3900);
+            </script>
+        </div>
+
+        <div id="slide-img">
+
+        </div>
+
+        <div id="content">
+            <!-- About section -->
+            <div id="band" class="content-section">
+                <h2 class="section-item"">THE1975</h2>
+                
+                
+                <!-- <p class="section-sub-heading">We love my fans</p> -->
+                <p class="about-text">
+                    The 1975 is an English pop rock band formed in 2002 in Wilmslow, Cheshire. 
+                    The band consists of lead vocalist and rhythm guitarist Matthew Healy, lead guitarist Adam Hann, bassist Ross MacDonald, and drummer George Daniel. 
+                    They gained widespread recognition for their distinctive sound that blends various genres, including pop, rock, and electronic elements.
+                </p>
+                <div class="row member-list" >
+                    <div class="Information" >
+                          <p class="member-name">Matty Healy</p>
+                        <div class="container">
+                            <!-- <img src="./img/1975/Snapinsta.app_123296192_203719957797833_1390586163875931175_n_1080.jpg" alt="Avatar" class="member-img"> -->
+                            <!-- <div class="overlay">
+                              <div class="The_item_text">Matthew Healy (Matty Healy):
+                                - Lead vocalist, rhythm guitarist.
+                                -8 tháng 4 năm 1989.</div>
+                            </div> -->
+                        </div>
+                    </div>
+                    
+                    <div class="Information">
+                         <p class="member-name">Ross Macdonald</p> 
+                        <div class="container">
+                            <!-- <img src="./img/1975/Snapinsta.app_285700050_967636770579075_8111644173153087875_n_1080.jpg" alt="Avatar" class="member-img"> -->
+                            <!-- <div class="overlay">
+                              <div class="The_item_text">Hello World</div>
+                        </div> -->
+                    </div>
+
+                    <div class="Information">
+                           <p class="member-name">Adam Hann</p>   
+                        <div class="container">
+                            <!-- <img src="./img/1975/Snapinsta.app_285700050_967636770579075_8111644173153087875_n_1080.jpg" alt="Avatar" class="member-img"> -->
+                            <!-- <div class="overlay">
+                              <div class="The_item_text">Hello World</div>
+                            </div> -->
+                    </div>
+
+                    <div class="Information">
+                           <p class="member-name">George Daniel</p>
+                        <div class="container">
+                            <!-- <img src="./img/1975/Snapinsta.app_285700050_967636770579075_8111644173153087875_n_1080.jpg" alt="Avatar" class="member-img"> -->
+                            <!-- <div class="overlay">
+                              <div class="The_item_text">Hello World</div>
+                            </div> -->
+                        </div>
+                </div>
+
+            </div>
+            <!-- tour section -->
+            <div id="tour" class="tour-section">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">TOUR DATES</h2>
+                    <p class="section-sub-heading text-white">
+                        Remember to book your tickets!
+                    </p>
+
+                    <!-- Tickets -->
+                    <ul class="tickets-list">
+                        <li>
+                            September <span class="sold-out">Soul out</span>
+                        </li>
+                        <li>
+                            October <span class="sold-out">Soul out</span>
+                        </li>
+                        <li>November <span class="quantity">9</span></li>
+                    </ul>
+
+                    <!-- Places -->
+                    <div class="row places-list">
+                        <div class="col col-third s-col-full mt-16">
+                            <img src="./img/places/place1.jpg" alt="" class="place-img" />
+                            <div class="place-body">
+                                <h3 class="place-heading">Paris</h3>
+                                <p class="place-time">Sat 28 Nov 2023</p>
+                                <p class="place-desc">
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button href="/" class=" btn js-buy-tickets s-full-width">Buy tickets</a>
+                            </div>
+                        </div>
+                        <div class="col col-third s-col-full mt-16">
+                            <img src="./img/places/place2.jpg" alt="" class="place-img" />
+                            <div class="place-body">
+                                <h3 class="place-heading">San Francisco</h3>
+                                <p class="place-time">Sun 29 Nov 2023</p>
+                                <p class="place-desc">
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button href="/" class=" btn js-buy-tickets s-full-width">Buy tickets</a>
+                            </div>
+                        </div>
+                        <div class="col col-third s-col-full mt-16">
+                            <img src="./img/places/place3.jpg" alt="" class="place-img" />
+                            <div class="place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time">Fri 30 Nov 2023</p>
+                                <p class="place-desc">
+                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button href="/" class=" btn js-buy-tickets s-full-width">Buy tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact section -->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="section-sub-heading">Drop a note!</p>
+
+                <div class="row contact-content">
+                    <div class="col col-half s-col-full contact-info">
+                        <p><i class="ti-location-pin"></i>Chicago, US</p>
+                        <p>
+                            <i class="ti-mobile"></i>Phone:
+                            <a href="tel:+00 151515">+00 713737</a>
+                        </p>
+                        <p>
+                            <i class="ti-email"></i>Email:
+                            <a href="mailto:mail@mail.com">bandstaff@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="col col-half s-col-full contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half s-col-full">
+                                    <input type="text" name="" id="contact-name" required placeholder="Name"
+                                        class="form-control" />
+                                </div>
+                                <div class="col col-half s-col-full s-mt-8">
+                                    <input type="email" name="" id="contact-email" required placeholder="Email"
+                                        class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" placeholder="Message" id="" class="form-control" />
+                                </div>
+                            </div>
+                            <input id="submit" class="contact-submit-btn btn mt-16 pull-right s-full-width"
+                                type="submit" value="SEND" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380511.451728915!2d-88.06161955725585!3d41.83377337729335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2zQ2hpY2FnbywgSWxsaW5vaXMsIEhvYSBL4buz!5e0!3m2!1svi!2s!4v1695985268773!5m2!1svi!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div id="footer">
+                <div class="social-list">
+                    <a href=""><i class="ti-facebook"></i></a>
+                    <a href=""><i class="ti-instagram"></i></a>
+                    <a href=""><i class="ti-google"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="ti-pinterest"></i></a>
+                    <a href=""><i class="ti-linkedin"></i></a>
+                    <a href=""><i class="ti-youtube"></i></a>
+                    <a href=""><i class="ti-flickr"></i></a>
+
+                </div>
+                <p class="copyright">Power by <a href="">w3.css</a></p>
+            </div>
+
+            <a id="button"></a>
+        </div>
+
+        <div class="modal">
+            <div class="modal-container">
+                <div class="modal-close">
+                    <i class="ti-close"></i>
+                </div>
+
+                <header class="modal-header">
+                    <i class="modal-heading-icon ti-bag"></i> Tickers
+                </header>
+
+                <div class="modal-body">
+                    <label for="ticket-quantity" class="modal-label">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        Tickets, $50 per person
+                    </label>
+                    <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?" />
+
+                    <label for="ticket-email" class="modal-label">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        Your name
+                    </label>
+                    <input id="ticket-email" type="email" class="modal-input" placeholder="Enter your name..." />
+
+                    <label for="ticket-email" class="modal-label">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Send to
+                    </label>
+                    <input id="ticket-email" type="email" class="modal-input" placeholder="Enter your email..." />
+
+
+                    <button id="buy-tickets">
+                        Pay
+                        <i class="ti-check"></i>
+                    </button>
+                </div>
+
+                <footer class="modal-footer">
+                    <p class="modal-help"><a href="">Need help?</a></p>
+                </footer>
+            </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/main.js"></script>
+
+</html>

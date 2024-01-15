@@ -1,0 +1,113 @@
+body {
+    background: #001689;
+    font-family: "Helvetica",arial,san-serif;
+    font-size: 14px;
+    color: rgb(255,255,255);
+    -webkit-font-smoothing: antialiased;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* logoType  */
+.logoType {
+    padding: 50px;
+    padding: 2vw;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    height: auto;
+    padding: 0 2vw;
+}
+
+/* Tour 1- Tour 2 (Button-Tickets)  */
+.tour-tickets {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+    margin: 10px;
+    text-align: center;
+}
+.tour-tickets .tickets {
+    position: relative;
+    display: inline-flex;
+    justify-content: center ;
+    align-items: center;
+    width: 10rem;
+    height: 75%;
+    border: 1px solid black;
+    border-radius:  .8rem;
+    background: white;
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing:  .1rem;
+    color: black;
+    z-index: 1;
+    overflow: hidden;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.tour-tickets .tickets:hover {
+    background: black;
+    color: white;
+}
+
+/* Tour 1- Tour 2  */
+.tour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+    margin: 10rem;
+}
+
+.tour .tour-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.tour-row .tour-column {
+    flex: 1 1 40rem;
+}
+
+.tour-column .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+}
+
+.tour-column .tour-box {
+    border-left: .2rem solid white;
+}
+
+.tour-box .tour-content {
+    position: relative;
+    padding-left:  2rem;
+}
+
+.tour-content .content {
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid white;
+    border-radius:  .6rem;
+    margin-bottom: 8rem;
+    color: aliceblue;
+    text-align: center;
+}
+
+.tour-content .content .year {
+    font-size:  1.5rem;
+    color: var white;
+    padding-bottom:  .5rem;
+}
+
