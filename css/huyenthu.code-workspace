@@ -1,0 +1,44 @@
+{
+	"folders": [
+		{
+			"name": "huyenthu",
+			"path": "../../huyenthu"
+		},
+		{
+			"name": "Btvn",
+			"path": "../../Btvn"
+		},
+		{
+			"name": "F8-BAND-master",
+			"path": "../../../Documents/Zalo Received Files/TheBand/F8-BAND-master"
+		},
+		{
+			"name": "contact",
+			"path": "../../contact"
+		},
+		{
+			"name": "Tren lop",
+			"path": "../../Tren lop"
+		},
+		{
+			"name": "Test",
+			"path": "../../Test"
+		},
+		{
+			"name": "THE1975",
+			"path": ".."
+		},
+		{
+			"path": "../../Tháng 2_khóa 3"
+		},
+		{
+			"path": "../../Tháng 3_khóa 3"
+		},
+		{
+			"path": "../../Tháng 4"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "THE1975"
+	}
+}

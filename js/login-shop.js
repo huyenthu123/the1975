@@ -1,17 +1,53 @@
-let login = document.getElementById('login')
-login.addEventListener("submit", (e) => {
+let register = document.querySelector("#login")
+register.addEventListener("submit", (e) => {
     e.preventDefault()
+    let email = document.getElementById('email')
+    let pw = document.getElementById("password")
 
-    let users = JSON.parse(localStorage.users)
+    let lowerCaseLetter = /[a-z]/g
+    let upperCaseLetter = /[A-Z]/g
+    let numbers = /[0-9]/g
 
-    let email = document.getElementById("email")
-    let pw = document.getElementById("password");
-
-    let check = users.map(index => index.email == email.value.trim() && index.pw == pw.value.trim())
-
-    if (check[0] == true){
-        window.location.href = "http://127.0.0.1:5500/Registration/Register-shop.html"
-    } else {
-        alert("Please input again")
+    if (email.value.trim().length == 0 && pw.value.trim().length == 0) {
+        alert("Please input your email & password")
     }
+        else if (email.value.trim().length == 0) {
+        alert("Please input your email")
+    }
+        else if (pw.value.trim().length == 0) {
+        alert("Please input your password")
+    }
+        else if (pw.value.trim().length < 8) {
+        alert("Password must be at least 8 characters.")
+    }  
+        else if (!pw.value.trim().match(lowerCaseLetter)) {
+            alert("Password must  contain a lowercase letter")
+    }
+        else if (!pw.value.trim().match(upperCaseLetter)) {
+        alert("Password must  contain a uppercase letter")
+    }
+        else if (!pw.value.trim().match(numbers)) {
+        alert("Password must  contain a number or special character")
+    }
+        else {
+            if(localStorage.users) {
+                let users = JSON.parse(localStorage.users)
+                users.push({
+                    email: email.value.trim(),
+                    pw: pw.value.trim()
+                })
+                localStorage.setItem("users", JSON.stringify(users))
+            } else {
+                localStorage.setItem("users",
+                JSON.stringify(
+                [
+                    {
+                      email: email.value.trim(),
+                      pw: pw.value.trim()
+                    }
+                ]));
+            }
+            location.replace("http://127.0.0.1:5500/html/The1975-logout.html")
+    }
+
 })

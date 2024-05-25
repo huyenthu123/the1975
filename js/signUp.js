@@ -1,6 +1,5 @@
 // validation form register and register user local storage
 const inputUsernameRegister = document.querySelector(".input-signup-username");
-const inputemailRegister = document.querySelector(".input-signup-email");
 const inputPasswordRegister = document.querySelector(".input-signup-password");
 const btnRegister = document.querySelector(".signup__signInButton");
 
@@ -12,7 +11,7 @@ btnRegister.addEventListener("click", (e) => {
     inputUsernameRegister.value === "" ||
     inputPasswordRegister.value === ""
   ) {
-    alert("Vui lòng không để trống");
+    alert("vui lòng không để trống");
   } else {
     // array user
     const user = {

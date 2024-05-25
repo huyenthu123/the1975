@@ -1,8 +1,13 @@
 *{
+    box-sizing: border-box;
+    font-family: 'Poppons',sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
 }
 
 
@@ -11,10 +16,10 @@
     color: black;
 }
 
-a{
+/* a{
     text-decoration: none;
     cursor: pointer;
-}
+} */
 
 .top-menu{
     background: black;
@@ -37,6 +42,12 @@ a{
 
 .top-menu .page a{
     color: white;
+    margin: 10px;
+}
+
+.top-menu a:hover,
+.top-menu a.emotion {
+    color: blue;
 }
 
 .top-menu .icon{
@@ -140,7 +151,49 @@ a{
 }
 
 .logo{
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     color: blue;
     font-weight: 600;
+}
+
+.header {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display:flex ;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgb(0, 0, 0);
+}
+
+
+.navbar a {
+   font-size: 1.7rem;
+   font-weight: 500;
+   color: white;
+   margin-left: 3.5rem;
+}
+
+.navbar a:hover,
+.navbar a.emotion {
+    color: var white;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var red;
+    cursor: pointer;
+    display: none;
+}
+.item {
+    text-align: center;
+
+}
+hr {
+    width: 5px;
+    margin: 20px;
 }
